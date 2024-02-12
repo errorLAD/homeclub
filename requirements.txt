@@ -144,7 +144,7 @@ filelock==3.0.12
 flake8==3.8.4
 fonttools==4.36.0
 freezegun==1.2.2
-GDAL @ file:///D:/updatingInfraAndGo/gohardware/testing/phase1/foodOnline/GDAL-3.4.3-cp310-cp310-win_amd64.whl
+
 google-api-core==2.8.2
 google-auth==2.11.0
 google-cloud-core==2.3.2
