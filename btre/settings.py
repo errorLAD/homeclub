@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-e+xv#*_p&17aq%tv(9a&td-t-71og$h1$n-(7)9k^gf9t5n!m0
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['*', 'localhost', '127.0.0.1','https://gohardware.in','https://*.gohardware.in','https://hardwaredepot.in','https://*.hardwaredepot.in', 'web-production-8dc1e.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['*', 'localhost', '127.0.0.1','web-production-3a48.up.railway.app']
 
 
 # Application definition
