@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-e+xv#*_p&17aq%tv(9a&td-t-71og$h1$n-(7)9k^gf9t5n!m0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','https://web-production-2c78.up.railway.app/','web-production-2c78.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['*', 'localhost', 'https://web-production-2c78.up.railway.app/','web-production-2c78.up.railway.app']
+ALLOWED_HOSTS = ['*','django-server-production-a89f.up.railway.app','web-production-2c78.up.railway.app', 'https://web-production-2c78.up.railway.app/']
+CSRF_TRUSTED_ORIGINS = ['*', 'localhost', '127.0.0.1','django-server-production-a89f.up.railway.app','https://web-production-2c78.up.railway.app/','web-production-2c78.up.railway.app']
 
 
 # Application definition
@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'btre.urls'
@@ -125,23 +126,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-MEDIA_URL = '/images/'
-
-MEDIA_ROOT = BASE_DIR / 'static'
-
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Media Folder Setting
+# Media Folder Setting
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Message
 from django.contrib.messages import constants as messages
