@@ -35,7 +35,7 @@ def register(request):
                     # messages.success(request, 'You are now logged in')
                     # return redirect('index')
                     user.save()
-                    messages.success(request, 'You are now registered and cal log in')
+                    messages.success(request, 'You are now registered and please LOG IN')
                     return redirect('login')
 
         else:
