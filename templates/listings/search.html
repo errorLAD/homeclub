@@ -326,21 +326,21 @@ class="w3-hide-large w3-hide-medium relative block overflow-hidden rounded-lg bo
 	<!-- Listings --><div class="overflow-hidden bg-white">
 		<div class="mx-auto max-w-7xl  ">
 
-			<section id="listings" class="py-4  px-4">
+			<section id="listings" class="py-4 ">
 				<div class="container">
-					<div class="row">
+					<div class="">
 						{% if listings %}
 							{% for listing in listings %}
 		
 		
-							<div class="px-1 block rounded-lg p-4 shadow-sm shadow-indigo-100">
+							<div class="px-1 block rounded-lg p-2 shadow-sm shadow-indigo-100">
 								<img
 								  alt="Home"
 								  src="{{ listing.photo_main.url }}"
 								  class="h-56 w-full rounded-md object-cover"
 								/>
 							  
-								<div class="mt-2">
+								<div class="mt-2 p-3">
 		
 								  
 								  <!--hello-->
