@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-e+xv#*_p&17aq%tv(9a&td-t-71og$h1$n-(7)9k^gf9t5n!m0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','web-production-393e.up.railway.app','www.firstspace.in']
-CSRF_TRUSTED_ORIGINS = ['*', 'localhost', '127.0.0.1','web-production-393e.up.railway.app','www.firstspace.in','*.firstspace.in']
+ALLOWED_HOSTS = ['*','web-production-393e.up.railway.app','www.firstspace.in', '*.firstspace.in']
+CSRF_TRUSTED_ORIGINS = ['*', 'localhost', '127.0.0.1','web-production-393e.up.railway.app','www.firstspace.in','*.firstspace.in', '*.firstspace.in']
 
 
 # Application definition
